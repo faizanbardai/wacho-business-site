@@ -9,43 +9,102 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link rel="stylesheet" href="index.css">
 
   <title>Hautain Wine</title>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Hautain Wine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <header>
-    <div class="container-fluid flex-center">
-      <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="#">Hautain Wine</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="mainTitle">Hautain Wine</h1>
-      <h2 class="mainSubtitle">Something about Hautain Wine</h2>
+    <div class="container-fluid hero flex-center">
+      <div class="hero-message">
+        <h1 class="mainTitle">Hautain Wine</h1>
+        <h2 class="mainSubtitle">Epic, ethic, exceptional, estraordinary, exclusive wines</h2>
+      </div>
     </div>
   </header>
 
-  <div>
-    Hi <br>
-    Hi <br>
-    Hi <br>
-    Hi <br>
-  </div>
+  <section>
+    <div class="container-fluid">
+      <h2 class="text-center py-4">Philosophy</h2>
+      <div class="row">
+        <div class="col-12 col-sm-4 m-auto">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tacuin_Automne03.jpg/800px-Tacuin_Automne03.jpg"
+            alt="Hautain Image" style="width:100%">
+        </div>
+        <div class="col-12 col-sm-8 m-auto">
+          <p>
+            La culture de la vigne en hautain est une méthode culturale connue depuis l'Antiquité. Cette façon de faire
+            fut
+            particulièrement utilisée par les Grecs, les Scythes et les Romains.
+          </p>
+          <p>
+            La vigne est mariée à un arbre qui lui sert de tuteur. Ses sarments s'accrochent aux branches et montent en
+            hauteur. Cette technique de cultures associées mariant arbre et vigne, incite et contraint cette dernière à
+            prendre de la hauteur pour se dégager d'un sol moins lumineux. Devenu tuteur, l'arbre taillé permet d'autres
+            productions céréalières, légumières ou fourragères sous son feuillage éclairci (principe de la joualle). Car
+            initialement, la conduite de la vigne en hautain avait pour but d'augmenter la production agricole, en
+            multipliant
+            les cultures sur un même lieu1.
+          </p>
+          <p>
+            Cette ancienne technique a été décrite par Columelle et Pline l'Ancien (coltura promiscua), ainsi que par
+            Ibn
+            al-Awwam, l'agronome andalou du xie siècle. Elle fut longtemps pratiquée en Picardie2. Dans les pays
+            méditerranéens, les vignes ont traditionnellement été maintenues en hauteur par des arbres taillés, les
+            hautains.
+          </p>
+          <p>
+            De nos jours, les hautains de bois vivant ont majoritairement été remplacés par des pieux ou des échalas de
+            bois
+            mort. On trouve néanmoins des derniers vestiges de hautains français en Haute-Savoie, au bord du lac Léman,
+            et
+            dans le piémont pyrénéen. Et cette forme de culture se maintient et même retrouve peu à peu ses lettres de
+            noblesse au Portugal, en Italie et en Crète dans le cadre d'une agriculture biologique de haute qualité
+            (AOC)1.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col-sm-4">
+          <p><i class="fas fa-map-marker-alt"></i></p>
+          <p>Goldenes Vlies M.M.M.</p>
+          <p>Regerplatz, 5 81541 Munich Germany</p>
+      </div>        
+      <div class="col-sm-4">
+          <p><i class="fas fa-envelope"></i></p>
+          <p>goldenes.vlies.mmm@gmail.com</p>
+          <p>office@vignehautain.com</p>
+      </div>        
+      <div class="col-sm-4">
+          <p><i class="fas fa-phone-volume"></i></p>
+          <p>+49 176 69521145</p>
+      </div>        
+    </div>    
+  </footer>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -58,6 +117,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/be0c1f0340.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>
 
