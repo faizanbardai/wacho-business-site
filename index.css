@@ -24,7 +24,7 @@ header {
     width: 100%;
     height: 100%;
     z-index: -2;
-    opacity: 0.4;
+    opacity: 1;
 }
 .flex-center {
     display: flex;
@@ -36,7 +36,7 @@ header {
     color:rgb(255, 255, 255);
     text-shadow: #343a40 2px 2px;
     min-width: 100%;
-    min-height: 12em;
+    min-height: 14em;
     position: relative;
 }
 .hero-message::before {
@@ -45,7 +45,7 @@ header {
     position: absolute;
     margin-left: 0;
     min-width: 100%;
-    min-height: 12em;
+    min-height: 14em;
     z-index: -1;
     opacity: 0.4;
     background-color: #343a40;
