@@ -7,6 +7,11 @@ header {
     height: 100vh;
 }
 
+.handwritten {
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
 /* video header begins */
 header {
     position: relative;
