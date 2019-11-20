@@ -1,5 +1,11 @@
+/* https://colorhunt.co/palette/2763 */
 html {
     scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eeeeee;
+  color: #222831;
 }
 
 header {
@@ -10,6 +16,10 @@ header {
 .handwritten {
     font-family: 'Indie Flower', cursive;
     text-shadow: 4px 4px 4px #aaa;
+}
+
+.text-light {
+  color: #00adb5 !important;
 }
 
 /* video header begins */
