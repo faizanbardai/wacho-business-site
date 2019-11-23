@@ -5,7 +5,7 @@ $('.navbar-collapse a').click(function () {
 
 
 // YouTube Background Music Player -Start
-var currentStatus = true;
+var currentStatus = false;
 // var src = document.getElementById("background-music").src;
 function playPauseAudio() {
     if (currentStatus) {
@@ -31,19 +31,26 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '0',
-    width: '0',
+    height: '300',
+    width: '300',
     videoId: 'scE8kZUv7hM',
     events: {
-      'onReady': onPlayerReady
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
     }
   });
 }
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  event.target.playVideo();
+  // event.target.playVideo();
   player.setVolume(10);
+}
+
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.ENDED) {
+    player.playVideo();
+  }
 }
 
 function stopVideo() {
