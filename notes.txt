@@ -1,0 +1,4 @@
+fixes to make: 
+1.  img when clicked/tapped should open the same img in carousel
+2.  youtube background audio is too loud - set low volume
+

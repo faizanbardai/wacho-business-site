@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="index.css">
 
   <title>Hautain Wine</title>
@@ -36,9 +39,10 @@
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="vid/header-loop.mp4" type="video/mp4">
     </video>
-    <div class="container h-100">
+    <div class="container h-100">      
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
+          <div class="display-4" id="playPauseIcon" onclick="playPauseAudio()"><i class="fa fa-volume-up"></i></div>
           <h1 class="display-3">Hautain Wine</h1>
           <p class="lead mb-0">Epic | Ethic | Exceptional | Estraordinary | Exclusive</p>
         </div>
@@ -229,6 +233,8 @@
     </div>
   </section>
 
+  <iframe id="background-music" width="0" height="0" src="https://www.youtube-nocookie.com/embed/scE8kZUv7hM?controls=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
   <footer class="text-white bg-dark py-4" id="contact">
     <div class="container">
       <div class="row">
@@ -239,21 +245,21 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="row pb-2">
-            <div class="col-1"><i class="fas fa-map-marker-alt text-light"></i></div>
+            <div class="col-1"><i class="fa fa-map-marker text-light"></i></div>
             <div class="col-11">
               <p class="text-light">Goldenes Vlies M.M.M.<br>
                 Regerplatz, 5 81541 Munich Germany</p>
             </div>
           </div>
           <div class="row pb-2">
-            <div class="col-1"><i class="fas fa-envelope text-light"></i></div>
+            <div class="col-1"><i class="fa fa-envelope text-light"></i></div>
             <div class="col-11">
               <a href="mailto:goldenes.vlies.mmm@gmail.com" class="text-light">goldenes.vlies.mmm@gmail.com</a><br>
               <a href="mailto:office@vignehautain.com" class="text-light">office@vignehautain.com</a>
             </div>
           </div>
           <div class="row pb-2">
-            <div class="col-1"><i class="fas fa-phone-volume text-light"></i></div>
+            <div class="col-1"><i class="fa fa-phone text-light"></i></div>
             <div class="col-11">
               <address><a href="tel:+4917669521145" class="text-light">+49-176-69521145</a></address>
             </div>
@@ -275,7 +281,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/be0c1f0340.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/be0c1f0340.js" crossorigin="anonymous"></script> -->
   <script src="index.js"></script>
 </body>
 
