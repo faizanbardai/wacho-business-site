@@ -155,7 +155,7 @@ wineProducts.innerHTML = "";
 {/* <h5 class="card-title">${product.title}</h5> */}
 products.forEach(product => {
   wineProducts.innerHTML += `
-      <div class="col col-sm-6 col-md-4">
+      <div class="col col-sm-6 col-md-3">
         <div class="card mb-3">
           <img src=${product.image} class="card-img-top" alt=${product.title}>
           <div class="card-body text-center">
