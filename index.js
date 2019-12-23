@@ -178,10 +178,37 @@ products.forEach(product => {
   `;
 });
 // Modal JS
-$('#productModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var title = button.data('title');
-  var modal = $(this)
-  modal.find('.modal-title').text(title);
-  
-})
+$("#productModal").on("show.bs.modal", function(event) {
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var title = button.data("title");
+  var image = button.data("image");
+  var variety = button.data("variety");
+  var color = button.data("color");
+  var aroma = button.data("aroma");
+  var taste = button.data("taste");
+  var alcohol = button.data("alcohol");
+  var description = button.data("description");
+  var modal = $(this);
+  modal.find(".modal-title").text(title);
+  modal.find(".modal-body").html(`
+    <div class="card">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="${image}" class="card-img" alt="Rice pitcher">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">            
+            <ul class="list-group list-group-flush">
+              <li id="variety" class="list-group-item">Variety: ${variety}</li>
+              <li id="color" class="list-group-item">Color: ${color}</li>
+              <li id="aroma" class="list-group-item">Aroma: ${aroma}</li>
+              <li id="taste" class="list-group-item">The taste is: ${taste}</li>              
+            </ul>
+            <p id="description" class="card-text">${description}</p>
+            <p class="card-text"><small id="alcohol" class="text-muted">Alcohol: ${alcohol}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `);
+});
