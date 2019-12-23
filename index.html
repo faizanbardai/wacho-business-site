@@ -121,49 +121,51 @@
   
   <!-- Products -->
   <section class="container">
-    <div class="row">
-      <div class="col col-sm-6 col-md-4">
-        <div class="card mb-3">
-          <img src="./img/p1.jpg" class="card-img-top" alt="Rice pitcher">
-          <div class="card-body">
-            <h5 class="card-title">Rice pitcher</h5>
+    <div class="row wine-products"></div>
+  </section>
+
+  <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
-      </div>
-      <div class="col col-sm-6 col-md-4">
-        <div class="card mb-3">
-          <img src="./img/p1.jpg" class="card-img-top" alt="Rice pitcher">
-          <div class="card-body">
-            <h5 class="card-title">Rice pitcher</h5>
+          <div class="modal-body">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="./img/p1.jpg" class="card-img" alt="Rice pitcher">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Rice pitcher</h5> -->
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Variety: Rkatsiteli</li>
+                      <li class="list-group-item">Color: Dark brown with golden color</li>
+                      <li class="list-group-item">Aroma: Meadow flowers</li>
+                      <li class="list-group-item">The taste is: soft</li>              
+                    </ul>
+                    <p class="card-text">"Rkatsiteli Pitcher" - Made from the ancient Georgian grape variety Rkatsiteli, built on strict sharing of
+                      ancestral traditions with whole chacha (clover, grains).</p>
+                    <p class="card-text">After fermentation, we will leave for 4-5 months in our unadulterated pitcher. Dark brown with golden
+                      hues. The tones of honey, flowers and roasted walnuts change dynamically, giving it fullness and elegance.</p>
+                    <p class="card-text"><small class="text-muted">Alcohol: 13%</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col col-sm-6 col-md-4">
-        <div class="card mb-3">
-          <img src="./img/p1.jpg" class="card-img-top" alt="Rice pitcher">
-          <div class="card-body">
-            <h5 class="card-title">Rice pitcher</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col col-sm-6 col-md-4">
-        <div class="card mb-3">
-          <img src="./img/p1.jpg" class="card-img-top" alt="Rice pitcher">
-          <div class="card-body">
-            <h5 class="card-title">Rice pitcher</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col col-sm-6 col-md-4">
-        <div class="card mb-3">
-          <img src="./img/p1.jpg" class="card-img-top" alt="Rice pitcher">
-          <div class="card-body">
-            <h5 class="card-title">Rice pitcher</h5>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
   <!-- Gallery section for Modal 2-->
   <div class="row pb-5">
@@ -175,13 +177,13 @@
     </div>
 
   <!--Modal Type 2-->
-  <div id="myModal" class="modal">
+  <div id="imgModal" class="img-modal">
   
     <!-- The Close Button -->
-    <span class="close">&times;</span>
+    <span class="imgClose">&times;</span>
   
     <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
+    <img class="img-modal-content" id="img01">
   
   </div>
 

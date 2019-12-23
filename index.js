@@ -60,22 +60,22 @@ function stopVideo() {
 
 //Modal 2 Starts
 // Get the modal
-var modal = document.getElementById("myModal");
+var imgModal = document.getElementById("imgModal");
 
 // Get the image and insert it inside the modal
 function modalDisplay(event) {
   var imgSrc = event.target.src;  
   var modalImg = document.getElementById("img01");
   modalImg.src = imgSrc;  
-  modal.style.display = "block";
+  imgModal.style.display = "block";
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("imgClose")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  imgModal.style.display = "none";
 }
 //Modal 2 Ends
 
@@ -90,3 +90,98 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// Products
+var products = [
+  {
+    title: "Rice Pitcher",
+    image: "./img/p1.jpg",
+    variety: "Rkatsiteli",
+    color: "Dark brown with golden color",
+    aroma: "Meadow flowers",
+    taste: "soft",
+    alcohol: "13%",
+    description:
+      '"Rkatsiteli Pitcher" - Made from the ancient Georgian grape variety Rkatsiteli, built on strict sharing of ancestral traditions with whole chacha (clover, grains). After fermentation, we will leave for 4-5 months in our unadulterated pitcher. Dark brown with golden hues. The tones of honey, flowers and roasted walnuts change dynamically, giving it fullness and elegance.'
+  },
+  {
+    title: "Green pitcher",
+    image: "./img/p2.jpg",
+    variety: "Green",
+    color: "Beige, green",
+    aroma: "Ripe fruit and various stems",
+    taste: "full and velvety",
+    alcohol: "13%",
+    description:
+      '"Green pitcher" comes from the grape variety "Kakhuri Green" grown in Kakheti. Has a light greenish tint. After fermentation we will lose 4-5 months in our uninvolved pitcher. The aroma and taste of the ripe fruit and the different dried fruits are felt, which blend well with each other when tasting. Is complete and velvety.'
+  },
+  {
+    title: "Pitcher pitcher",
+    image: "./img/p3.jpg",
+    variety: "Khikhvi",
+    color: "Green tint, golden",
+    aroma: "Meadow flowers",
+    taste: "ripe fruit, velvety",
+    alcohol: "13%",
+    description:
+      '"Khikhvi Qvevri" is made from the ancient Khikhvi grape variety. Has a golden-green tint. After fermentation we will lose 4-5 months in our uninvolved pitcher. It is distinguished by the delicate floral aroma, the aroma of the ripe fruit and the taste, it is delicate and velvety. It has high antioxidant healing properties.'
+  },
+  {
+    title: "Kiss the pitcher",
+    image: "./img/p4.jpg",
+    variety: "Kiss",
+    color: "Dark brown",
+    aroma: "gentle fruity and fruity aroma",
+    taste: "harmonious, soft",
+    alcohol: "13%",
+    description:
+      '"Kiss Qvevri" is made from the ancient Georgian grape variety Qissi. Grapes selected on the grape are pitched 4-5 with careful patronage. It has a dark brown color.'
+  },
+  {
+    title: "Saperavi pitcher",
+    image: "./img/p5.jpg",
+    variety: "Saperavi",
+    color: "Purple, dark pomegranate",
+    aroma: "cherry, blackberry, forest berry, plum",
+    taste: "cherries, berries, blackberries",
+    alcohol: "13%",
+    description:
+      '"Saperavi pitcher" is made from the ancient Georgian vine variety Saperavi, cultivated in Kakheti. It is characterized by dark pomegranate, violet color.'
+  },
+];
+//get products section
+var wineProducts = document.querySelector(".wine-products");
+wineProducts.innerHTML = "";
+{/* <h5 class="card-title">${product.title}</h5> */}
+products.forEach(product => {
+  wineProducts.innerHTML += `
+      <div class="col col-sm-6 col-md-4">
+        <div class="card mb-3">
+          <img src=${product.image} class="card-img-top" alt=${product.title}>
+          <div class="card-body text-center">
+            <button 
+              class="btn btn-outline-info stretched-link"
+              data-toggle="modal" 
+              data-target="#productModal"
+              data-title='${product.title}'
+              data-image='${product.image}'
+              data-variety='${product.variety}'
+              data-color='${product.color}'
+              data-aroma='${product.aroma}'
+              data-taste='${product.taste}'
+              data-alcohol='${product.alcohol}'
+              data-description='${product.description}'
+            >${product.title}</button>
+          </div>
+        </div>
+      </div>
+  `;
+});
+// Modal JS
+$('#productModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var title = button.data('title');
+  var modal = $(this)
+  modal.find('.modal-title').text(title);
+  
+})
