@@ -64,60 +64,18 @@
     </div>
   </nav>
 
-  <section class="container">
-    <h2 class="text-center" id="about">Philosophy</h2>
-    <div class="row">
-      <div class="col-12 col-sm-4 m-auto">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tacuin_Automne03.jpg/800px-Tacuin_Automne03.jpg"
-          alt="Hautain Image" style="width:100%" class="img-thumbnail rounded">
-      </div>
-      <div class="col-12 col-sm-8 m-auto">
-        <p class="lead">
-          La culture de la vigne en hautain est une méthode culturale connue depuis l'Antiquité. Cette façon de faire
-          fut
-          particulièrement utilisée par les Grecs, les Scythes et les Romains.
-        </p>
-        <p>
-          La vigne est mariée à un arbre qui lui sert de tuteur. Ses sarments s'accrochent aux branches et montent en
-          hauteur. Cette technique de cultures associées mariant arbre et vigne, incite et contraint cette dernière à
-          prendre de la hauteur pour se dégager d'un sol moins lumineux. Devenu tuteur, l'arbre taillé permet d'autres
-          productions céréalières, légumières ou fourragères sous son feuillage éclairci (principe de la joualle). Car
-          initialement, la conduite de la vigne en hautain avait pour but d'augmenter la production agricole, en
-          multipliant
-          les cultures sur un même lieu1.
-        </p>
-        <p>
-          Cette ancienne technique a été décrite par Columelle et Pline l'Ancien (coltura promiscua), ainsi que par
-          Ibn
-          al-Awwam, l'agronome andalou du xie siècle. Elle fut longtemps pratiquée en Picardie2. Dans les pays
-          méditerranéens, les vignes ont traditionnellement été maintenues en hauteur par des arbres taillés, les
-          hautains.
-        </p>
-        <p>
-          De nos jours, les hautains de bois vivant ont majoritairement été remplacés par des pieux ou des échalas de
-          bois
-          mort. On trouve néanmoins des derniers vestiges de hautains français en Haute-Savoie, au bord du lac Léman,
-          et
-          dans le piémont pyrénéen. Et cette forme de culture se maintient et même retrouve peu à peu ses lettres de
-          noblesse au Portugal, en Italie et en Crète dans le cadre d'une agriculture biologique de haute qualité
-          (AOC)1.
-        </p>
-      </div>
-    </div>
+  <!-- Be smart text -->
+  <div class="handwritten shadow-lg p-3 mb-5 bg-white rounded text-center display-4">
+    Be smart, just drink the best and fuck the rest!
+  </div>
+
+  <!-- Products -->
+  <section id="products" class="container">
+    <div class="row wine-products d-flex justify-content-around"></div>
   </section>
 
+  <!-- Product Modal -->
   <section class="container">
-    <div class="handwritten shadow-lg p-3 mb-5 bg-white rounded text-center display-4">
-      Be smart, just drink the best and fuck the rest!
-    </div>
-
-    <!-- Products -->
-    <section id="products" class="container">
-      <div class="row wine-products d-flex justify-content-around"></div>
-    </section>
-
-    <!-- Product Modal -->
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
@@ -135,10 +93,103 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- Philosophy | Sociology | My Dream | About Me | My team -->
+  <section class="container">
+    <ul class="nav nav-pills mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-philosophy-tab" data-toggle="pill" href="#pills-philosophy" role="tab"
+          aria-controls="pills-philosophy" aria-selected="true">Philosophy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-sociology-tab" data-toggle="pill" href="#pills-sociology" role="tab"
+          aria-controls="pills-sociology" aria-selected="false">Sociology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-dream-tab" data-toggle="pill" href="#pills-dream" role="tab"
+          aria-controls="pills-dream" aria-selected="false">My Dream</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-about-me-tab" data-toggle="pill" href="#pills-about-me" role="tab"
+          aria-controls="pills-about-me" aria-selected="false">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-my-team-tab" data-toggle="pill" href="#pills-my-team" role="tab"
+          aria-controls="pills-my-team" aria-selected="false">My team</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-philosophy" role="tabpanel"
+        aria-labelledby="pills-philosophy-tab">
+        <section>
+          <div class="row">
+            <div class="col-12 col-sm-4 m-auto">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tacuin_Automne03.jpg/800px-Tacuin_Automne03.jpg"
+                alt="Hautain Image" style="width:100%" class="img-thumbnail rounded">
+            </div>
+            <div class="col-12 col-sm-8 m-auto">
+              <p class="lead">
+                La culture de la vigne en hautain est une méthode culturale connue depuis l'Antiquité. Cette façon de
+                faire
+                fut
+                particulièrement utilisée par les Grecs, les Scythes et les Romains.
+              </p>
+              <p>
+                La vigne est mariée à un arbre qui lui sert de tuteur. Ses sarments s'accrochent aux branches et
+                montent
+                en
+                hauteur. Cette technique de cultures associées mariant arbre et vigne, incite et contraint cette
+                dernière à
+                prendre de la hauteur pour se dégager d'un sol moins lumineux. Devenu tuteur, l'arbre taillé permet
+                d'autres
+                productions céréalières, légumières ou fourragères sous son feuillage éclairci (principe de la
+                joualle).
+                Car
+                initialement, la conduite de la vigne en hautain avait pour but d'augmenter la production agricole, en
+                multipliant
+                les cultures sur un même lieu1.
+              </p>
+              <p>
+                Cette ancienne technique a été décrite par Columelle et Pline l'Ancien (coltura promiscua), ainsi que
+                par
+                Ibn
+                al-Awwam, l'agronome andalou du xie siècle. Elle fut longtemps pratiquée en Picardie2. Dans les pays
+                méditerranéens, les vignes ont traditionnellement été maintenues en hauteur par des arbres taillés,
+                les
+                hautains.
+              </p>
+              <p>
+                De nos jours, les hautains de bois vivant ont majoritairement été remplacés par des pieux ou des
+                échalas
+                de
+                bois
+                mort. On trouve néanmoins des derniers vestiges de hautains français en Haute-Savoie, au bord du lac
+                Léman,
+                et
+                dans le piémont pyrénéen. Et cette forme de culture se maintient et même retrouve peu à peu ses
+                lettres
+                de
+                noblesse au Portugal, en Italie et en Crète dans le cadre d'une agriculture biologique de haute
+                qualité
+                (AOC)1.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="tab-pane fade" id="pills-sociology" role="tabpanel" aria-labelledby="pills-sociology-tab">sociology
+      </div>
+      <div class="tab-pane fade" id="pills-dream" role="tabpanel" aria-labelledby="pills-dream-tab">My Dream</div>
+      <div class="tab-pane fade" id="pills-about-me" role="tabpanel" aria-labelledby="pills-about-me-tab">About me
+      </div>
+      <div class="tab-pane fade" id="pills-my-team" role="tabpanel" aria-labelledby="pills-my-team-tab">My Team</div>
+    </div>
+  </section>
 
-
-    <!-- Gallery section for Modal 2-->
+  <!-- Gallery section for Modal 2-->
+  <section class="container">
     <div class="row pb-5">
       <div class="col"><img class="myImg" id="myImg1" onclick='modalDisplay(event)' src="img/1.jpeg" alt="wine-image"
           style="width: 100%;"></div>
@@ -151,18 +202,21 @@
       <div class="col"><img class="myImg" id="myImg1" onclick='modalDisplay(event)' src="img/5.jpeg" alt="wine-image"
           style="width: 100%;"></div>
     </div>
+  </section>
 
-    <!--Modal Type 2-->
-    <div id="imgModal" class="img-modal">
+  <!--Modal Type 2-->
+  <div id="imgModal" class="img-modal">
 
-      <!-- The Close Button -->
-      <span class="imgClose">&times;</span>
+    <!-- The Close Button -->
+    <span class="imgClose">&times;</span>
 
-      <!-- Modal Content (The Image) -->
-      <img class="img-modal-content" id="img01">
+    <!-- Modal Content (The Image) -->
+    <img class="img-modal-content" id="img01">
 
-    </div>
+  </div>
 
+  <!-- some text -->
+  <section class="container">
     <p class="lead">
       VIGNE HAUTAIN folgen weder Trends noch Regeln, sondern sind das Ergebnis einer permanenten Suche nach dem absolut
       Guten – nur tote Fische schwimmen mit dem Strom!

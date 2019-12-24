@@ -17,10 +17,6 @@ header {
     z-index: 1031;
 }
 
-#about {
-  padding-top: 140px;
-}
-
 .handwritten {
     font-family: 'Indie Flower', cursive;
     text-shadow: 4px 4px 4px #aaa;
